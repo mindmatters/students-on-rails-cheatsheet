@@ -1,0 +1,391 @@
+<html>
+  <meta charset='utf-8'>
+
+  <head>
+    <link rel='stylesheet' type='text/css' href='./cheatsheet.css'>
+  </head>
+
+  <body>
+    <div class='cheatsheet-headline'>
+      <h1>Students on Rails 2015 Cheatsheet</h1>
+    </div>
+
+    <div class='cheatsheet-container'>
+      <div class='cheatsheet-column'>
+        <div class='cheatsheet-section'>
+          <h1>shell basics</h1>
+          <div class='cheatsheet-section__listing'>
+            <code>mkdir &lt;dir&gt;</code>
+            <span>Verzeichnis <code>&lt;dir&gt;</code> erstellen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>ls &lt;dir&gt;</code>
+            <span>Inhalte in dem Verzeichnis <code>&lt;dir&gt;</code> anzeigen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>cd &lt;dir&gt;</code>
+            <span>Nach <code>&lt;dir&gt;</code> wechseln</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>mv &lt;foo&gt; &lt;dir/bar&gt;</code>
+            <span>Verzeichnis oder Datei <code>&lt;foo&gt;</code> in das Verzeichnis <code>&lt;dir&gt;</code> verschieben und in <code>&lt;bar&gt;</code> umbenennen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>rm &lt;file&gt;</code>
+            <span><code>&lt;file&gt;</code> löschen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>rm -r &lt;dir&gt;</code>
+            <span><code>&lt;dir&gt;</code> und alles darin löschen (-r bedeutet recursive)</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>rmdir &lt;dir&gt;</code>
+            <span>Leeres Verzeichnis <code>&lt;dir&gt;</code> löschen  </span>
+          </div>
+        </div>
+        <div class='cheatsheet-section'>
+          <h1>rails & rake</h1>
+          <div class='cheatsheet-section__listing'>
+            <code>rails new &lt;name&gt;</code>
+            <span>Ein neues Rails Projekt anlegen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>rails generate migration &lt;name&gt;</code>
+            <span>Datenbank-Migration erstellen</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>rails generate model &lt;name&gt;</code>
+            <span>Model erstellen</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>rake db:create</code>
+            <span>Datenbank erstellen</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>rake db:migrate</code>
+            <span>Datenbank-Migrationen ausführen</span>
+          </div>
+        </div>
+      </div>
+      <div class='cheatsheet-column'>
+        <div class='cheatsheet-section'>
+          <h1>git</h1>
+          <div class='cheatsheet-section__listing'>
+            <code>git init</code>
+            <span>Ein neues lokales Git Repository anlegen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git clone</code>
+            <span>Ein bestehendes Repository von einem remote Server clonen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git status</code>
+            <span>Aktuellen Status von geänderten und/oder hinzugefügenten Dateien im Repository anzeigen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git add &lt;file*&gt;</code>
+            <span>Datei(en)/Änderungen für den nächsten Commit vormerken</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git commit</code>
+            <span>Vorgemerkte Datei(en)/Änderungen in das lokale Repostitory schreiben</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git pull &lt;server&gt; &lt;branch&gt;</code>
+            <span>Commits von einem remote Server herunterladen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git branch &lt;name&gt;</code>
+            <span>Einen neuen Branch namens <code>&lt;name&gt;</code> erstellen</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git checkout &lt;name&gt;</code>
+            <span>Den Branch <code>&lt;name&gt;</code> auschecken</span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>git push &lt;server&gt; &lt;branch&gt;</code>
+            <span>Commits auf dem aktuellen lokalen Branch auf den remote Branch <code>&lt;branch&gt;</code> hochladen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='cheatsheet-container'>
+      <div class='cheatsheet-column'>
+        <div class='cheatsheet-section'>
+          <h1>ruby</h1>
+          <p>Vollständige Doku unter ruby-doc.org</p>
+
+          <h2>basics</h2>
+
+          <div class='cheatsheet-section__listing'>
+            <code>puts "Ein String"</code>
+            <span>Ausgabe</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code># Ein Kommentar</code>
+            <span>Kommentare</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>pi = 3.14159</code>
+            <span>Variablenzuweisung</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>objekt.methode(parameter)</code>
+            <span>Methodenaufruf</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>objekt1 == objekt2</code>
+            <span>Prüfen auf Wertgleichheit</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>objekt1 != objekt2</code>
+            <span>Prüfen auf Wertungleichheit</span>
+          </div>
+
+          <h2>strings</h2>
+
+          <div class='cheatsheet-section__listing'>
+            <code>"Hallo, ich bin #{name}"</code>
+            <span>Interpolation mit doppelten Anführungszeichen<span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>"Hallo".length #=> 5</code>
+            <span>Länge eines Strings<span>
+          </div>
+
+          <div class='cheatsheet-section__listing'>
+            <code>"Guten " + "Tag" #=> "Guten Tag"</code>
+            <span>Konkatenation<span>
+          </div>
+        </div>
+      </div>
+      <div class='cheatsheet-column'>
+        <div class='cheatsheet-section'>
+          <h2>arrays</h2>
+
+          <div class='cheatsheet-section__listing'>
+            <code>tiere = ["hund", "katze", "maus"]</code>
+            <span>Erstellen</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>tiere[0] #=> "hund"</code>
+            <span>Zugriff</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>tiere[1] = "tiger"</code>
+            <span>Zuweisung</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>tiere.length #=> 3</code>
+            <span>Größe eines Arrays</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>tiere << "giraffe"</code>
+            <span>Element hinzufügen</span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>tiere.each { |tier| puts tier }</code>
+            <span>Iteration</span>
+          </div>
+
+          <h2>hashes</h2>
+          <div class='cheatsheet-section__listing'>
+            <code>person = { :name => "Hans" }</code>
+            <span>Erstellen<span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>person = { name: "Hans" }</code>
+            <span>Alternative Syntax für Erstellung<span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>person[:name] #=> "Hans"</code>
+            <span>Zugriff<span>
+          </div>
+          <div class='cheatsheet-section__listing'>
+            <code>person[:name] = "Fritz"</code>
+            <span>Zuweisung<span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='cheatsheet-container'>
+
+      <div class='cheatsheet-column'>
+        <div class='cheatsheet-section'>
+          <h2>Bedingungen</h2>
+
+          <codeblock>
+            <code>
+              <p>heute = Time.now</p>
+
+              if heute.saturday? || heute.sunday?
+              <tab>puts "Ausschlafen"</tab>
+              elsif heute.friday?
+              <tab>puts "Ein bisschen ausschlafen"</tab>
+              else
+              <tab>puts "Früh aufstehen"</tab>
+              end
+            </code>
+          </codeblock>
+
+          <h2>Schleifen</h2>
+
+          <codeblock>
+            <code>
+              <p>i = 0</p>
+              while i < 5
+              <tab>puts i</tab>
+              <tab>i += 1</tab>
+              end
+
+              <p># Gleiches Ergebnis mit Ranges:</p>
+
+              for j in 0..4
+              <tab>puts j</tab>
+              end
+            </code>
+          </codeblock>
+
+          <h2>Iteratoren</h2>
+
+          <codeblock>
+            <code>
+              <p># Mit each eine Aktion für <b>jedes</b> Element einer Sammlung ausführen</p>
+
+              [1, 2, 3].each { |zahl| puts zahl+1 }
+
+              <p># Oder mehrzeilig:</p>
+
+              [1, 2, 3].each do |zahl|
+              <tab>puts zahl+1</tab>
+              end
+            </code>
+          </codeblock>
+
+          <h2>Klassen</h2>
+
+          <codeblock>
+            <code>
+              class Person
+              <tab>def initialize(name)</tab>
+              <tab><tab>@name = name</tab></tab>
+              <tab>end</tab>
+
+              <br />
+
+              <tab>def vorstellen</tab>
+              <tab><tab>puts "Hallo, ich bin #{@name}."</tab></tab>
+              <tab>end</tab>
+              end
+            </code>
+          </codeblock>
+
+        </div>
+      </div>
+      <div class='cheatsheet-column'>
+        <div class='cheatsheet-section'>
+
+          <h2>Getter und Setter</h2>
+
+          <codeblock>
+            <code>
+              class Person
+              <tab>attr_reader :name # Lesen des Attributs</tab>
+              <tab>attr_writer :name # Schreiben des Attributs</tab>
+              <tab>attr_accessor :name # Lesen und Schreiben des Attributs</tab>
+              end
+            </code>
+          </codeblock>
+
+          <h2>Vererbung</h2>
+
+          <codeblock>
+            <code>
+              class Softwareentwickler < Person
+              <tab>def vorstellen</tab>
+                <tab><tab>super</tab></tab>
+                <tab><tab>puts "Ich bin Softwareentwickler!"</tab></tab>
+              <tab>end</tab>
+              end
+            </code>
+          </codeblock>
+
+          <h2>Module</h2>
+
+          <codeblock>
+            <code>
+              <p>
+                # nicht instanziierbar<br />
+                # Methoden können von Klassen übernommen werden
+              </p>
+
+              <p>
+                module MeinModul
+                <tab>def test</tab>
+                <tab><tab>puts "Dies ist ein Test."</tab></tab>
+                <tab>end</tab>
+                end
+              </p>
+
+              <p>
+                class MeineKlasse
+                <tab>include MeinModul</tab>
+                end
+              </p>
+
+              <p>
+                MeineKlasse.new.test
+              </p>
+            </code>
+          </codeblock>
+
+          <codeblock>
+            <code>
+              <p># Schutz vor Namenskollisionen:</p>
+
+              <p>
+                module MeinModul
+                <tab>class MeineKlasse</tab>
+                <tab><tab>def test</tab></tab>
+                <tab><tab><tab>puts "Dies ist ein weiterer Test."</tab></tab></tab>
+                <tab><tab>end</tab></tab>
+                <tab>end</tab>
+                end
+              </p>
+              <p>
+                MeinModul::MeineKlasse.new.test <br />
+                # Ausgabe: "Dies ist ein weiterer Test."
+              </p>
+            </code>
+          </codeblock>
+
+          <codeblock>
+            <code>
+              <p># besonderes Modul: Enumerable (führt alle Methoden auf each zurück)</p>
+
+              [1, 2, 3].all? { |zahl| zahl > 0 }<br />
+              [1, 2, 3].map { |zahl| zahl*-1 }
+            </code>
+          </codeblock>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

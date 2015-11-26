@@ -1,0 +1,74 @@
+body {
+  min-width: 850px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 3px;
+}
+
+codeblock {
+  display: block;
+  background-color: pink;
+  padding: 0.5em;
+  padding-top: 0;
+  border-right: 3px solid yellow;
+  border-bottom: 3px solid yellow;
+  margin-bottom: 0.3em;
+}
+
+codeblock p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+tab {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.cheatsheet-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cheatsheet-container h1 {
+  font-size: 2em;
+}
+
+.cheatsheet-column {
+  min-width: 50%;
+}
+
+.cheatsheet-section {
+  padding: 1em;
+}
+
+.cheatsheet-section h1 {
+  font-size: 1.5em;
+}
+
+.cheatsheet-section h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+.cheatsheet-section__listing {
+  background-color: white;
+  display: flex;
+  margin-bottom: 0.3em;
+}
+
+.cheatsheet-section__listing code {
+  width: 50%;
+}
+
+.cheatsheet-section__listing span {
+  flex-shrink: 100;
+}
